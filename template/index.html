@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website</title>
+    <link rel="stylesheet" href="../static/stlye.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Remember<span>That</span></a>
+
+            <img id="mobile_menu" class="mobile_menu" src="../static/img/menu_icon.svg" alt="Menu">
+
+            <nav>
+                <img id="mobile_menu_close" class="mobile_menu_close" src="../static/img/close_nav.png" alt="Close Menu">
+                <ul class="primary_nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="secondary_nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="premium_cta"><a href="#">Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left_col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task App That Doesn't Stink</h1>
+
+                <div class="hero_cta">
+                    <a href="#" class="primary_cta">Try for free</a>
+                    <a href="#" class="watch_for_free">
+                        <img src="../static/img/watch_icon.png" alt="video">Watch a video
+                    </a>
+                </div>
+            </div>
+
+            <img src="../static/img/illustration.svg" class="hero_img" alt="illustration">
+        </div>
+    </section>
+
+    <section class="features_section">
+        <div class="container">
+            <ul class="features_list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other awesome features</li>
+            </ul>
+            <img src="../static/img/holding-phone.jpg" alt="Man holding phone">
+        </div>  
+    </section>
+
+    <section class="testimonials_section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="../static/img/person.jpg" alt="Person">
+
+                    <blockquote>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</blockquote>
+                    <cite>Dan Doe</cite>
+                </li>
+                <li>
+                    <img src="../static/img/person.jpg" alt="Person">
+
+                    <blockquote>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</blockquote>
+                    <cite>Dan Doe</cite>
+                </li>
+                <li>
+                    <img src="../static/img/person.jpg" alt="Person">
+
+                    <blockquote>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</blockquote>
+                    <cite>Dan Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact_section">
+        <div class="container">
+            <div class="contact_left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="First and Last">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send_message_cta" value="Send Message">
+                </form>
+            </div>
+
+            <div class="contact_right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63612.7748497305!2d6.95877572167968!3d4.804637900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cc46348f661f%3A0x59ad73f23b4fd92f!2sGenesis%20Restaurant%2C%20TRANS-AMADI!5e0!3m2!1sen!2sng!4v1723732306856!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile_menu');
+        const nav = document.querySelector('nav');
+        const mobileBtnClose = document.getElementById('mobile_menu_close');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu_btn');
+        })
+
+        mobileBtnClose.addEventListener('click', () =>{
+            nav.classList.remove('menu_btn')
+        })
+    </script>
+</body>
+</html>
